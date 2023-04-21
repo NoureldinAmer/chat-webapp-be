@@ -13,6 +13,9 @@ const messageSchema = new mongoose.Schema({
     type: String,
     enum: ["text", "media", "document", "link", "sticker"],
   },
+  link: {
+    type: String,
+  },
   created_at: {
     type: Date,
     default: Date.now(),
